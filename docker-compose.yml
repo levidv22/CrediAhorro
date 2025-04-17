@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+
+    db:
+      image: postgres:16.1
+      container_name: db-crediahorro
+      restart: always
+      environment:
+        POSTGRES_DB: 'crediahorro'
+        POSTGRES_USER: 'servicecrediahorro'
+        POSTGRES_PASSWORD: 'levi22'
+      ports:
+        - '5432:5432'
+    
